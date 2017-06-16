@@ -1,6 +1,14 @@
 box: golang
 dev:
   steps:
+    # Gets the dependencies
+    - script:
+        name: go get
+        code: |
+          go get -d golang.org/x/tools/cmd/goimports
+          go get -d golang.org/x/tools/cover
+          go get -d github.com/axw/gocov/gocov
+
     - internal/watch:
         code: |
           go build ./...
