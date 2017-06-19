@@ -2,9 +2,7 @@ box: golang
 dev:
   steps:
     # Gets the dependencies
-    - script:
-        
-
+    
     - internal/watch:
         code: |
           go build ./...
