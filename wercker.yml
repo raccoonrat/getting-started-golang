@@ -28,7 +28,6 @@ build:
         code: |
           go test ./...
 
-
 deploy-accs:
   steps:
     # Deploy to Oracle Application Container Cloud
